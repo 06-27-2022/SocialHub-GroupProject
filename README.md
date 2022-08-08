@@ -1,2 +1,1 @@
-# SocialHub-GroupProject
- SocialHub-GroupProject
+This file contains user stories for Project2
