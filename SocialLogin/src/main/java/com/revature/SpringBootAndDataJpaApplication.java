@@ -16,14 +16,14 @@ public class SpringBootAndDataJpaApplication {
 	
 
 	
-	@Bean
-	public RestTemplate restTemplate() {
-		RestTemplate restTemplate = new RestTemplate();
-
-		restTemplate.setUriTemplateHandler(new DefaultUriBuilderFactory("https://pokeapi.co/api/v2/"));
-		return restTemplate;
-	}
-	
+//	@Bean
+//	public RestTemplate restTemplate() {
+//		RestTemplate restTemplate = new RestTemplate();
+//
+//		restTemplate.setUriTemplateHandler(new DefaultUriBuilderFactory("https://pokeapi.co/api/v2/"));
+//		return restTemplate;
+//	}
+//	
 	
 
 }
