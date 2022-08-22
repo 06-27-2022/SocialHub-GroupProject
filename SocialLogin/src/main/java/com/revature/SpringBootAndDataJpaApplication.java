@@ -20,7 +20,7 @@ public class SpringBootAndDataJpaApplication {
 //	public RestTemplate restTemplate() {
 //		RestTemplate restTemplate = new RestTemplate();
 //
-//		restTemplate.setUriTemplateHandler(new DefaultUriBuilderFactory("https://pokeapi.co/api/v2/"));
+//		restTemplate.setUriTemplateHandler(new DefaultUriBuilderFactory(""));
 //		return restTemplate;
 //	}
 //	
