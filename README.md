@@ -1,9 +1,13 @@
 This file contains user stories for Project2: SocialHub
 
 Stephanie Bowser
+
 Ryan Griffin
+
 Muhammad Ali
-Yaovi Attidekou
+
+
+
 
 Our project includes functionality for a social media space. This project will include 
 functionality such as login/logout, creating and editing a profile, posting and rating photos, 
