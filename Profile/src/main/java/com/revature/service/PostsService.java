@@ -17,7 +17,11 @@ public class PostsService {
 	public PostsService() {
 		
 	}
-	
+	public List<Posts> findAllPosts(){
+		List<Posts> posts = this.postsRepository.findAllPosts();
+		
+		return posts;
+	}
 	public List<Posts> findPostByUserId(int i){
 		List<Posts> posts = this.postsRepository.findAllByUserId(i);
 		
