@@ -30,7 +30,7 @@ public class SocialController {
 	@Autowired
 	private SocialService socialService;
 	@Autowired
-	private RestTemplate restTemplate;
+	//private RestTemplate restTemplate;
 	
 	/*
 	 * Let's start by adding a simple endpoint ("/all") that will allow the client to retrieve
@@ -101,10 +101,10 @@ public class SocialController {
 	 * 1) My frontend is a client to my Spring application
 	 * 2) My Spring application is a client to the Social API
 	 */
-	@GetMapping(path = "/social-api/{name}")
-	public Object findSocialApiSocialByName(@PathVariable String name) {
-		return this.restTemplate.getForObject("social/" + name, Object.class);
-	}
+//	@GetMapping(path = "/social-api/{name}")
+//	public Object findSocialApiSocialByName(@PathVariable String name) {
+//		return this.restTemplate.getForObject("social/" + name, Object.class);
+//	}
 	
 
 }
