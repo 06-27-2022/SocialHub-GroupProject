@@ -21,20 +21,21 @@ public class PostsController {
 	@Autowired
 	PostsService postsService;
 	
-	
-	
-	
 	@GetMapping(path = "/all")
+	public List<Posts> findAllPosts(){
+		return this.postsService.findAllPosts();
+		
+	}
+	
+	
+	@GetMapping(path = "/")
 	public List<Posts> findByUserId(@RequestParam int userId){
-		//System.out.println(this.postsService.findPostByUserId(userId));
-		//return "Hello World";
 		return this.postsService.findPostByUserId(userId);
 		
 	}
 	
 	@PostMapping(path = "/new", consumes = MediaType.APPLICATION_JSON_VALUE)
 	public void save(@RequestBody Posts posts) {
-		System.out.println("This is post: " + posts);
 		this.postsService.save(posts);
 	}
 	

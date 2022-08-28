@@ -1,5 +1,10 @@
 package com.revature.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -8,9 +13,16 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Data
 
+@Entity
+@Table(name="users")
 public class User {
-	private int id;
-	private String name;
-	private String photoUrl;
-	private String location;
+	
+	@Id
+	@Column(name = "userId")
+	private int userId;
+	@Column(name = "fullName")
+	private String fullName;
+	@Column(name = "region")
+	private String region;
+	
 }
